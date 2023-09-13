@@ -1,0 +1,166 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Card from '../components/Card.astro';
+import nav from '../components/nav.astro';
+import { YouTube } from '@astro-community/astro-embed-youtube';
+
+
+---
+
+<Layout title="Welcome to Saville Creek .">
+	<main>
+	<nav />
+		<svg
+			class="astro-a"
+			width="495"
+			height="623"
+			viewBox="0 0 495 623"
+			fill="none"
+			xmlns="http://www.w3.org/2000/svg"
+			aria-hidden="true"
+		>
+
+			<defs>
+				<linearGradient
+					id="paint0_linear_1805_24383"
+					x1="247.358"
+					y1="0"
+					x2="247.358"
+					y2="622.479"
+					gradientUnits="userSpaceOnUse"
+				>
+					<stop stop-opacity="0.9"></stop>
+					<stop offset="1" stop-opacity="0.2"></stop>
+				</linearGradient>
+			</defs>
+		</svg>
+		<h1>Welcome to <span class="text-gradient">Saville Creek</span></h1>
+		
+		<p>This hot new tourist attraction is getting all the attention in Rolleston. That's right, you guessed it... Saville Creek. If your planning on visiting Rolleston this has to be one of the places you have to visit. During Saville Season (right after a big rain shower or storm)  this place is flooded with water and there are kids for miles watching and waiting to have their turn to play in the water. When there is water you can go fishing (not that your gonna catching anything) but there has been sightings and catchings of rainbow trout (like Martin) and other mysterious animals not to be even discovered by scientists!</p>
+		<br>
+	
+<div id="gallery" class="relative w-full" data-carousel="slide">
+	<!-- Carousel wrapper -->
+	<div class="relative h-56 overflow-hidden rounded-lg md:h-96">
+		<!-- Item 2 -->
+		<div class="hidden duration-700 ease-in-out" data-carousel-item="active">
+			<img src="../public/EmbeddedImage.jpg" class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="">
+		</div>
+		<!-- Item 3 -->
+		<div class="hidden duration-700 ease-in-out" data-carousel-item>
+			<img src="../public/EmbeddedImage2.jpg" class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="">
+		</div>
+		<!-- Item 4 -->
+		<div class="hidden duration-700 ease-in-out" data-carousel-item>
+			<img src="../public/EmbeddedImage3.jpg" class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="">
+		</div>
+		<!-- Item 5 -->
+		<div class="hidden duration-700 ease-in-out" data-carousel-item>
+			<img src="../public/EmbeddedImage5.jpg" class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="">
+		</div>
+	</div>
+	<!-- Slider controls -->
+	<button type="button" class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
+		<span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+			<svg class="w-4 h-4 text-white dark:text-gray-800" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+				<path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
+			</svg>
+			<span class="sr-only">Previous</span>
+		</span>
+	</button>
+	<button type="button" class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
+		<span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+			<svg class="w-4 h-4 text-white dark:text-gray-800" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+				<path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
+			</svg>
+			<span class="sr-only">Next</span>
+		</span>
+	</button>
+</div>
+<br>
+Watch out for Saville Season ( when it rains quite severely ) and make you way down here to have a good time. Make sure to bring a pair of togs and a picnic... oh and definitely your phone because you will definitely be getting some great pics and vids to put on your Instagram page!
+
+"Better bring your swimming togs, because things are about to get wet" ~  Moates Bailey ~  New York Times
+<br>
+<br>
+<div class="grid grid-cols-2 gap-2">
+        <div>
+            
+			<YouTube class="h-auto max-w-full rounded-lg" id="hPlDJujGHzY" playlabel="Play the video" />
+        </div>
+        <div>
+            <p>Your Video Could be here</p>
+        </div>
+        <div>
+            <p>Your Video Could be here</p>
+        </div>
+        <div>
+            <p>Your Video Could be here</p>
+        </div>
+    </div>
+	<br>
+	<footer>
+		<p>Photos and Video taken by Charlie Johnston (As far as I know) | Powered by <a herf="https://www.husky.nz"> HuskyNZ </a> using vercel | &copy; 2022 - 2023</script></p>
+		</footer>
+	</main>
+
+</Layout>
+
+<style>
+	main {
+		margin: auto;
+		padding: 1rem;
+		width: 800px;
+		max-width: calc(100% - 2rem);
+		color: white;
+		font-size: 20px;
+		line-height: 1.6;
+	}
+	.astro-a {
+		position: absolute;
+		top: -32px;
+		left: 50%;
+		transform: translatex(-50%);
+		width: 220px;
+		height: auto;
+		z-index: -1;
+	}
+	h1 {
+		font-size: 4rem;
+		font-weight: 700;
+		line-height: 1;
+		text-align: center;
+		margin-bottom: 1em;
+	}
+	.text-gradient {
+		background-image: var(--accent-gradient);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		background-size: 400%;
+		background-position: 0%;
+	}
+	.instructions {
+		margin-bottom: 2rem;
+		border: 1px solid rgba(var(--accent-light), 25%);
+		background: linear-gradient(rgba(var(--accent-dark), 66%), rgba(var(--accent-dark), 33%));
+		padding: 1.5rem;
+		border-radius: 8px;
+	}
+	.instructions code {
+		font-size: 0.8em;
+		font-weight: bold;
+		background: rgba(var(--accent-light), 12%);
+		color: rgb(var(--accent-light));
+		border-radius: 4px;
+		padding: 0.3em 0.4em;
+	}
+	.instructions strong {
+		color: rgb(var(--accent-light));
+	}
+	.link-card-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
+		gap: 2rem;
+		padding: 0;
+	}
+</style>
